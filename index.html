@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HardPC Electronics</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    HardPC
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Components</a>
+<a href="#">Peripherals</a>
+<a href="#">Gaming</a>
+<a href="#">Deals</a>
+
+</nav>
+
+<div class="search">
+
+<input type="text" id="search" placeholder="Search products...">
+
+</div>
+
+<div class="cart" id="cart">
+
+🛒 <span id="cartCount">0</span>
+
+    <div class="cart-box">
+
+        <h3>Your Cart</h3>
+
+        <div id="cartItems"></div>
+
+    </div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Build Your Dream PC</h1>
+
+<p>Latest GPUs, CPUs, Gaming Gear, and Accessories</p>
+
+<button data-category="All">Shop Now</button>
+
+</section>
+
+<section class="categories">
+
+<div class="category" data-category="Graphics Cards">Graphics Card</div>
+<div class="category" data-category="Processors">Processors</div>
+<div class="category" data-category="Motherboards">Motherboards</div>
+<div class="category" data-category="RAM">RAM</div>
+<div class="category" data-category="SSD">SSD</div>
+<div class="category" data-category="Gaming Mouse">Gaming Mouse</div>
+<div class="category" data-category="Mechanical Keyboard">Mechanical Keyboard</div>
+<div class="category" data-category="HeadSets">Headsets</div>
+
+</section>
+
+<h2 class="section-title">Featured Products</h2>
+
+<div id="productGrid" class="product-grid"></div>
+
+<section class="about" id="about">
+
+<h2>About HardPC</h2>
+
+<p>
+TechHub Electronics is an e-commerce web prototype that offers computer components,
+gaming peripherals, and other PC-related products. 
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+
+<input type="text" id="contactName" placeholder="Your Name" required>
+
+<input type="email" id="contactEmail" placeholder="Your Email" required>
+
+<textarea id="contactMessage" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="contactMessageResult"></p>
+
+</section>
+
+<div id="productModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close">&times;</span>
+
+<div id="productDetails"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
